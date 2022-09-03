@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Billabong";
+	src: url("../public/fonts/Billabong.ttf");
+}
+
+@layer components {
+	body {
+		font-family: "Inter", sans-serif;
+		overflow: overlay;
+		@apply selection:bg-indigo-500 selection:text-white;
+	}
+
+	.font {
+		font-family: "Billabong", cursive;
+	}
+}
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(11, 19, 43, 0.4);
+	border-radius: 100px;
+}
